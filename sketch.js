@@ -114,7 +114,7 @@ function draw() {
 
     if(distance <= 50){
       zombie.velocityX = 0
-      Matter.Body.Velocity(stone.body, {x: 10, y: -10});
+      Matter.Body.setVelocity(stone.body, {x: 10, y: -10});
       zombie.changeImage("sad");
       collided = true
 
